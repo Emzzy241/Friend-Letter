@@ -10,13 +10,42 @@
     <meta charset='utf-8'>
   </head>
   <body>
-    <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
+    <div class="container">
+      <h1>Fill in the details of your Post card!</h1>
+    <br> <br> <br>
+    
+    <h5>Fill in your name and your friend's name to create your custom postcard!</h5>
     <form action="/postcard" method="post">
         <label for="sender">Sender's Name</label>
         <input id="sender" name="sender" type="text">
         <label for="recipient">Recipient's Name</label>
         <input id="recipient" name="recipient" type="text">
-        <button type="submit">Go!</button>
+    <br> <br>
+
+        <h5>Fill in the remaining details below</h5>
+        <p>Enter the 3 locations you will be visiting during vacation</p>
+        <label for="myLocation1"> Enter your first location</label>
+        <input id="myLocation1" name="myLocation1" type="text">
+        <label for="myLocation2"> Enter your second location</label>
+        <input id="myLocation2" name="myLocation2" type="text">
+        <label for="myLocation3"> Enter your third location</label>
+        <input id="myLocation3" name="myLocation3" type="text">
+    <br> <br>
+
+        <p>Enter 3 souvenirs you will be bringing for your recipient from your trip</p>
+        <label for="mySouvenir1"> Enter the first souvenir</label>
+        <input id="mySouvenir1" name="mySouvenir1" type="text">
+        <label for="mySouvenir2"> Enter the second souvenir</label>
+        <input id="mySouvenir2" name="mySouvenir2" type="text">
+        <label for="mySouvenir3"> Enter the third souvenir</label>
+        <input id="mySouvenir3" name="mySouvenir3" type="text">
+    <br> <br>
+
+
+        <center> 
+          <button class="btn btn-primary" type="submit">Go!</button>
+        </center>
     </form>
+    </div>
   </body>
 </html>
